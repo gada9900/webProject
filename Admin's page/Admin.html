@@ -1,0 +1,112 @@
+<!DocType html>
+
+<html>
+	<head>
+	<title> Admin's Page </title>
+	<link rel = "stylesheet" href = "AdminStyle.css">
+	</head>
+	
+
+	<body>
+	<h2> Admin's Page </h2>
+	<hr style = "margin-right : 135px;">
+	
+	<hr width="1" size="500"  >
+	
+	<div class="split left">                         <!-- Left side -->
+<h3> Artists account waiting for approval: </h3>
+<hr class = "a">
+  <div class="centered">
+    
+    <p> 
+	
+	
+	<table id="myTable">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+				<th>LinkedIn</th> 
+            </tr>
+            
+            <tr>
+                <td>Hana</td>
+                <td>Mohammad</td>
+				<td><a href = "https://www.linkedin.com/in/artist-hana-mohammad-71166163/ ">
+				<img src="linkedin.png" alt="linked1" width = "50" height = "50" ></a></td>
+                <td><input type="button" value="Approve" onclick="deleteRow(this)"></td>
+                <td><input type="button" value="Disapprove" onclick="deleteRow(this)"></td>
+            </tr>
+            
+            <tr>
+                <td>Ajay</td>
+                <td>Devgan</td>
+				<td><a href = "https://www.linkedin.com/in/theajaydevgan/ ">
+				<img src="linkedin.png" alt="linked1" width = "50" height = "50" ></a></td>
+                <td><input type="button" value="Approve" onclick="deleteRow(this)"></td>
+                <td><input type="button" value="Disapprove" onclick="deleteRow(this)"></td>
+            </tr>
+            
+            
+        </table>
+
+	
+	
+	</p>
+	
+  </div>
+</div>
+
+<div class="split right">                        <!-- right side -->
+<h3> Artworks for the competition: </h3>
+<hr class = "a">
+
+  <div class="leftImg">
+    <img src="monsterC1.jpg" alt="monster1 Competition">
+    <p>Robert Reed</p>
+	<br>
+    <input type="radio" id="male" name="gender" value="male">
+	<label for="male">Accept</label><br>
+	<input type="radio" id="female" name="gender" value="female">
+	<label for="female">Decline</label><br>
+  </div>
+  
+  <div class="rightImg">
+    <img src="monsterC2.jpg" alt="monster1 Competition">
+    <p>John Doe</p>
+    <br>
+    <input type="radio" id="age1" name="age" value="50">
+	<label for="male">Accept</label><br>
+	<input type="radio" id="age2" name="age" value="60">
+	<label for="female">Decline</label><br>
+	
+  </div>
+  <div class="centeredButton">
+  <button onclick = popUp() class = "mybutton" type="button">Submit</button>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	<script>
+            function deleteRow(r) {
+                // button -> td -> tr -> tbody -> table
+                var row = r.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+                popUp();
+                
+                //document.getElementById("myTable").deleteRow(index);
+            }
+			
+			function popUp() {
+			alert("Saved action, We'll let the artist know of your action");
+			}
+            
+        </script>
+	
+	
+	
+	
+	</body>
+</html>

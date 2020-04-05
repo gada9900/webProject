@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up!</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h1 class="form-title">Sign up 🖥</h1>
+                        
+                        <div method="POST" class="register-form" id="register-form">                             
+                                     <div class="types">
+                                         <button class="btn-visitor" id="visitor">Visitor</button>
+                                         <button class="btn-artist" id="artist">Artist</button>
+                                     </div>
+                         <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="First Name"/>
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Last Name"/>
+                            </div>   
+                            
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                            </div>
+                                 <div class="form-group">
+                                <label for="linkedin" ><i class="zmdi zmdi-linkedin"></i></label>
+                                <input type="linkedin" id="linkedin" name="linkedin" id="linkedin" placeholder="LinkedIn"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="additional information" ><img src="img/pluse.png"></label>
+                                <input type="input"  name="additional information" id="info" placeholder="additional information"/>
+                            </div>
+                            <div class="form-group"> 
+                                <form action="#">
+                                <div class="input-file-container">  
+                                  <input class="input-file" id="my-file" type="file">
+                                  <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+                                </div>
+                                <p class="file-return"></p>
+                              </form>
+                              
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" onclick="signup()"/>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signupvisitor" style="display: none;" class="form-submit" value="Register" onclick="signupvisitor()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="log in.html" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+           
+  
+        </section>
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script>
+   $('#visitor').click(function() {
+       $('#linkedin').css("display", "none");
+       $('#visitor').css('border-bottom', '1px solid black');
+       $('#visitor').css('border-right', '1px solid black');
+       $('#artist').css('border-bottom', 'none');
+       $('#artist').css('border-left', 'none');
+       $('.input-file-container').css('display','none');
+       $('#info').css("display", "none");
+       $('#signup').css("display", "none");
+       $('#signupvisitor').css("display", "block");
+
+});
+$('#artist').click(function() {
+       $('#linkedin').css("display", "block");
+       $('#artist').css('border-bottom', '1px solid black');
+       $('#artist').css('border-left', '1px solid black');
+       $('#visitor').css('border-bottom', 'none');
+       $('#visitor').css('border-right', 'none');
+       $('.input-file-container').css('display','block');
+       $('#signup').css("display", "block");
+       $('#info').css("display", "block");
+       $('#signupvisitor').css("display", "none");
+
+});
+function signupvisitor(){
+    swal("WELCOME!", "You signed up successfully!", "success");
+}
+
+document.querySelector("html").classList.add('js');
+
+var fileInput  = document.querySelector( ".input-file" ),  
+    button     = document.querySelector( ".input-file-trigger" ),
+    the_return = document.querySelector(".file-return");
+      
+button.addEventListener( "keydown", function( event ) {  
+    if ( event.keyCode == 13 || event.keyCode == 32 ) {  
+        fileInput.focus();  
+    }  
+});
+button.addEventListener( "click", function( event ) {
+   fileInput.focus();
+   return false;
+});  
+fileInput.addEventListener( "change", function( event ) {  
+    the_return.innerHTML = this.value;  
+});  
+
+</script>
+
+
+</body>
+</html>
