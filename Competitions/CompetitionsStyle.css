@@ -1,0 +1,138 @@
+
+body{
+	background-image: url("background.png");
+}
+
+h2{
+	margin: 10px;
+	margin-top : 30px;
+	padding-top : 15px;
+	color: black;
+  font-size : 35px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+p{
+}
+p.a {
+	font-size : 24px;
+	padding-left : 40px;
+}
+p.b{
+	font-size : 16px;
+}
+
+body{
+	margin : 10px;
+}
+
+.artwork{
+	padding: 5px;
+	margin : 10px;
+}
+
+hr{
+	margin-right : 175px;
+}
+
+.mybutton{
+	margin-left : 50px;
+	font-size : 20px;
+}
+
+
+
+
+
+.container {
+  position: relative;
+  width: 500px;
+  padding : 10px;
+}
+
+.image {
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding : 10px;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  
+  padding: 5px;
+  padding-left : 30px;
+}
+.logo{ 
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width:80px;
+  height: 65px;
+}
+ul {
+  list-style-type: none;
+  left: 70px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: pink;
+}
