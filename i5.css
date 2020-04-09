@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lucida Handwriting' ;
+}
+#img{
+    position: absolute;
+    left: 10%;
+    width: 350px;
+    height: 430px;
+    top: 1%;
+    border-radius: 5px;
+    box-shadow: 0 1px 20px -1px gray;
+}
+
+.reaction{
+    position: absolute;
+    top: 54%;
+    left: 13%;
+    width: 20%;
+    height: 10%;
+}
+.like{
+    position: absolute;
+    left: 20%;
+}
+.reaction i{
+    font-size: 30px;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    
+}
+
+.dislike{
+    position: absolute;
+    left: 60%;
+}
+.reaction h3 ,h4{
+    color: #9F827B;
+    font-size: 20px;
+}
+.reaction h4{
+    position: absolute;
+    left: 75%;
+    top: 5%;
+}
+.reaction h3{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+.reaction i:hover{
+    color: #9F827B;
+}
+
+span{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background: #f3f3f3;
+    border: none;
+}
+.add-comment{
+    position: absolute;
+    top: 63%;
+    right: 10%;
+    width: 400px;
+    height: 300px;
+    display: none;
+    animation: animate 1s;
+    animation-direction: alternate;
+}
+@keyframes animate{
+    from{
+        top: 60%;
+    }
+    to{
+        top: 63%;
+    }
+}
+#add{
+    position: absolute;
+    top: 80%;
+    height: 30px;
+    right: 25%;
+    width: 150px;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 1px 20px -1px #f3f3f3;
+    cursor: pointer;
+}
+.add-comment h5{
+    font-weight:lighter;
+    font-size: 22px;
+}
+.add-comment input, textarea{
+    padding: 15px;
+    margin: 8px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+    box-shadow: 0 1px 10px -1px #f3f3f3;
+}
+#name{
+    width: 255px;
+    margin-left: 0;
+    height: 10px;
+}
+#comment{
+    width: 255px;
+}
+#btn{
+    position: absolute;
+    top: 102%;
+    right: 50%;
+    height: 30px;
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    font-family: 'Lucida Handwriting' ;
+
+}
+.view-comments{
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+.view-comments h3{
+    font-weight: lighter;
+    font-size: 22px;
+}
+fieldset {
+    position: absolute;
+    top: 15%;
+    width: 55%;
+    box-shadow: 0 1px 10px -1px #c2c2c2;
+    border-radius: 5px;
+}
+fieldset:nth-child(2) {
+    position: absolute;
+    top: 40%;
+    width: 55%;
+}
+fieldset p{
+    margin-left: 5%;
+}
+fieldset legend{
+    font-size: 18px;
+}
+.bio{
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 45%;
+}
+#art, #type, #public{
+    color: #9F827B;
+}
+#type{
+    position: absolute;
+    top:35%;
+    left:  20%;
+    font-size:30px;
+}
+#art{
+    position: absolute;
+    left:  20%;
+    font-size:30px;
+}
+#public{
+    position: absolute;
+    left:  20%;
+    font-size:30px;
+}
