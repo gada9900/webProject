@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Artist Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,600" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Artists</h1>
+<section class="Grid">
+  <div class="Grid-row"><a class="Card" onClick="openGallery(1)" id="card-1">
+      <div class="Card-thumb">
+        <div class="Card-shadow"></div>
+        <div class="Card-shadow"></div>
+        <div class="Card-shadow"></div>
+        <div class="Card-image" style="background-image: url(img/A3/Artist3.png);"></div>
+      </div>
+      <div class="Card-title"><span>lois van baarle</span></div>
+      <div class="Card-explore"><span>Explore more Art</span></div>
+      <button class="Card-button">Check Me!</button></a><a class="Card" onClick="openGallery(2)" id="card-2">
+      <div class="Card-thumb">
+        <div class="Card-shadow"></div>
+        <div class="Card-shadow"></div>
+        <div class="Card-shadow"></div>
+        <div class="Card-image" style="background-image: url(img/A2/Artist2.png);"></div>
+      </div>
+      <div class="Card-title"><span>Christian Orrillo</span></div>
+      <div class="Card-explore"><span>Explore more Art</span></div>
+      <button class="Card-button">Check Me!</button></a><a class="Card" onClick="openGallery(3)" id="card-3">
+      <div class="Card-thumb">
+        <div class="Card-shadow"></div>
+        <div class="Card-shadow"></div>
+        <div class="Card-shadow"></div>
+        <div class="Card-image" style="background-image: url(img/A1/Artist1.jpg);"></div>
+      </div>
+      <div class="Card-title"><span>Jenny Yu</span></div>
+      <div class="Card-explore"><span>Explore more Art</span></div>
+      <button class="Card-button">Check Me!</button></a>
+  </div>
+  
+</section>
+<section class="Gallery" id="gallery-1">
+  <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+  <div class="Gallery-images">
+    <div class="Gallery-left">
+      <div class="Gallery-image"></div>
+      <div class="Gallery-image"></div>
+    </div>
+    <div class="Gallery-image Gallery-image--primary" style="background-image: url('img/A3/Artist3.png');"></div>
+  </div>
+  <div class="Gallery-images">
+    <div class="Gallery-imag"><a href="i5.html"><img src="img/A3/i5new.jpg" id="img1"></a></div>
+    <div class="Gallery-image"><a href="i4.html"><img src="img/A3/i4new.png" id="img2"></a></div>
+    <div class="Gallery-image"><a href="i1.html"><img src="img/A3/i1.jpg" id="img3"></a></div>
+  </div>
+
+</section>
+<section class="Gallery" id="gallery-2">
+  <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+  <div class="Gallery-images">
+    <div class="Gallery-left">
+      <div class="Gallery-image"></div>
+      <div class="Gallery-image"></div>
+    </div>
+    <div class="Gallery-image Gallery-image--primary" style="background-image: url(img/A2/Artist2.png);"></div>
+  </div>
+  <div class="Gallery-images">
+    <div class="Gallery-imag"><a href="c5.html"><img src="img/A2/c5New.jpg" id="img1"></a></div>
+    <div class="Gallery-image"><a href="c3.html"><img src="img/A2/c3New.jpg" id="img2"></a></div>
+    <div class="Gallery-image" ><a href="c2.html"><img src="img/A2/c2New.jpg" id="img3"></a></div>
+  </div>
+                
+</section>
+<section class="Gallery" id="gallery-3">
+  <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+  <div class="Gallery-images">
+    <div class="Gallery-left">
+      <div class="Gallery-image"></div>
+      <div class="Gallery-image"></div>
+    </div>
+    <div class="Gallery-image Gallery-image--primary" style="background-image: url(img/A1/Artist1.jpg);"></div>
+  </div>
+  <div class="Gallery-images">
+    <div class="Gallery-imag"><a href="Info.html"><img src="img/A1/cafeNew.jpg" id="img1"></a></div>
+    <div class="Gallery-image"><a href="sea.html"><img src="img/A1/seaNew.jpg" id="img2"></a></div>
+    <div class="Gallery-image"><a href="summer.html"><img src="img/A1/summerNew.jpg" id="img3"></a></div>
+  </div>
+  
+</section>
+
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
