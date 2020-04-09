@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel = "stylesheet" href = "ArtStyle.css">
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <img src="logo.jpeg" class="logo" alt="logo">
+  <ul>
+    <li><a href="logo"></a>logo</li>
+    <li><a href="logo"></a>logo</li>
+    <li><a class="active" href="/Users/matheralshablan/Desktop/web 4/homepage/Dhomepage.html">Home</a></li>
+    <li><a href="AboutUs.html">About</a></li>
+    <li><a href="/Users/matheralshablan/Desktop/web 4/homepage/Contact.html">Contact</a></li>
+    <li style="float:right;"><a href="/Users/matheralshablan/Desktop/web 4/Website A/Login_Register/log in.html">Login</a></li>
+  </ul>
+    <div class="container">
+        <div class ="row">
+            <div class ="banner">
+        <img src="c5New.jpg" class="im" width="100%"  height="590px" alt="Digital asrt">
+        <img src="c4.jpg" class="im" width="100%"  height="590px" alt="Digital asrt"> 
+        <img src="c2New.jpg" class="im" width="100%"  height="590px" alt="Digital asrt"> 
+        <img src="c3New.jpg" class="im" width="100%"  height="590px" alt="Digital asrt">
+        <h2>D.I.G.I.T.A.L  BRAIN </h2>
+    </div>
+    </div>
+    </div>
+    
+</body>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("im");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
+    </html>
